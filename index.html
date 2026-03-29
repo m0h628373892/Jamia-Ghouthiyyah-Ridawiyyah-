@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JGR College</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500&family=Amiri&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #111;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(12px);
+}
+
+.logo {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.arabic {
+    font-family: 'Amiri', serif;
+    color: #0f5132;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-inner {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero h1 span {
+    color: #0f5132;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* SECTION BASE */
+.section {
+    max-width: 820px;
+    margin: 160px auto;
+    padding: 0 20px;
+}
+
+.label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* INLINE LIST (NOT BOXES) */
+.inline-list {
+    margin-top: 20px;
+    color: #444;
+}
+
+.inline-list span {
+    display: block;
+    margin: 6px 0;
+}
+
+/* CURRICULUM STYLE */
+.curriculum {
+    margin-top: 30px;
+}
+
+.curriculum div {
+    margin-bottom: 18px;
+}
+
+.curriculum strong {
+    color: #0f5132;
+}
+
+/* DIVIDER */
+.divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(to right, #0f5132, gold);
+    margin: 60px 0;
+    opacity: 0.4;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 100px 20px;
+    color: #888;
+}
+
+/* FADE ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">JGR College</div>
+    <div class="arabic">جامعة غوثية رضوية</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-inner">
+        <h1>
+            Reviving the <span>tradition</span><br>
+            of sacred knowledge
+        </h1>
+        <p>
+            A refined Dars-e-Nizami institute rooted in classical scholarship, precision, and legacy.
+        </p>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="section fade">
+    <div class="label">About</div>
+    <div class="title">A return to authenticity</div>
+    <div class="text">
+        JGR College (جامعة غوثية رضوية) is dedicated to preserving the classical Dars-e-Nizami tradition through structured, disciplined learning rooted in centuries of scholarship.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="label">Headteacher</div>
+    <div class="title">Scholarly authority</div>
+    <div class="text">
+        A specialist in Arabic, Fiqh, Hadith, and Tafsir, and a graduate of Jamia Tul Ashrafiyyah Mubarakpur.
+    </div>
+
+    <div class="inline-list">
+        <span>Mufti Sharif ul Haq Amjadi</span>
+        <span>Mufti Nizamuddin Misbahi</span>
+        <span>Allamah Muhammad Ahmed Misbahi</span>
+        <span>Mufti Zia ul Mustafa Amjadi</span>
+    </div>
+</div>
+
+<!-- CURRICULUM -->
+<div class="section fade">
+    <div class="label">Curriculum</div>
+    <div class="title">Classical formation</div>
+
+    <div class="curriculum">
+        <div><strong>Nahw</strong> — Imdad ul Nahw, Nahw Mir, Hidayahtun Nahw</div>
+        <div><strong>Sarf</strong> — Sarf ul Jilani, Imdad ul Sarf</div>
+        <div><strong>Usul al-Hadith</strong> — Mizaan ul Hadith</div>
+        <div><strong>Tafsir</strong> — Tafsir al-Jalalayn</div>
+        <div><strong>Hadith</strong> — Mishkat, Muwatta Imam Muhammad, Sahih Bukhari</div>
+        <div><strong>Fiqh</strong> — Quduri, Wiqayah, Hidayah</div>
+    </div>
+</div>
+
+<!-- VALUES -->
+<div class="section fade">
+    <div class="label">Methodology</div>
+    <div class="title">Rooted in the Salaf</div>
+    <div class="text">
+        Our approach aligns with the Salaf and upholds the doctrine of Imam Ahmad Rida Khan, combining spiritual depth with academic precision.
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="label">Graduates</div>
+    <div class="title">Leading the next generation</div>
+    <div class="text">
+        Our graduates teach across the North West, shaping communities and carrying forward the legacy of traditional Islamic scholarship.
+    </div>
+</div>
+
+<footer>
+    © 2026 JGR College
+</footer>
+
+<script>
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        if(el.getBoundingClientRect().top < window.innerHeight - 100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
